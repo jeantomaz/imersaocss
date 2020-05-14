@@ -16,7 +16,7 @@ body {
 /* Se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
   body {
-    font-size: 4px;
+    font-size: 14px;
   }
 }
 
@@ -70,4 +70,8 @@ a:hover {
 .img-portfolio {
   height: 180px;
   width: 180px;
+}
+
+figcaption{
+  color: orange;
 }
