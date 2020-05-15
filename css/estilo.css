@@ -47,6 +47,12 @@ header{
 .menu a {
   display: block;
   padding: 10px 20px;
+  transition: background-color, color 2s;
+}
+
+.menu a:hover {
+  background-color:teal;
+  color: white;
 }
 
 a {
@@ -54,6 +60,7 @@ a {
   text-decoration: none;
 }
 
+/* Quando se passa o mouse por cima */
 a:hover {
   text-decoration: underline;
 }
@@ -74,11 +81,13 @@ a:hover {
   font-family: 'Roboto', sans-serif;
 }
 
+.contato,
 .portfolio {
   padding: 2em;
   height: 100vh;
 }
 
+.contato h2,
 .portfolio h2 {
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
@@ -116,6 +125,21 @@ a:hover {
   border-radius: 10px;
 }
 
-figcaption{
+figcaption {
   color: orange;
+}
+
+.contato .icons {
+  text-align: center;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 5em;
+  transition: text-shadow 1s;
+}
+
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
 }
