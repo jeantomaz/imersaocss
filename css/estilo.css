@@ -33,6 +33,7 @@ header{
   position: fixed;
   width: 100vw;
   top: 0px;
+  z-index: 1;
 }
 
 .menu ul {
@@ -63,6 +64,22 @@ a {
 /* Quando se passa o mouse por cima */
 a:hover {
   text-decoration: underline;
+}
+
+.titulo {
+  transform: scale(0.2) translatey(10vh);
+  opacity: 0;
+  animation: 1s linear 2s animacaoTitulo forwards;
+}
+
+/* Animacao do tipo iframe */
+@keyframes animacaoTitulo{
+
+  100% {
+    transform: scale(1) translatey(0);
+    opacity: 1;
+  }
+
 }
 
 .site-subtitle,
