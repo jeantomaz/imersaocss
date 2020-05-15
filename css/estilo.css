@@ -74,14 +74,46 @@ a:hover {
   font-family: 'Roboto', sans-serif;
 }
 
+.portfolio {
+  padding: 2em;
+  height: 100vh;
+}
+
 .portfolio h2 {
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 3em;
+}
+
+.portfolio .grid {
+  display:grid;
+  gap: 2em;
+}
+
+@media (min-width: 560px){
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px){
+  .portfolio .grid {
+    grid-template-columns: 240px 240px 240px;
+    justify-content: center;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
 }
 
 .img-portfolio {
   height: 180px;
-  width: 180px;
+  width: 240px;
+  object-fit: contain;
+  object-position: left bottom;
+  border-radius: 10px;
 }
 
 figcaption{
